@@ -32,7 +32,7 @@ const projectDisplayData = {
 
 
   'ai-chatbot': {
-    title: 'AI-Powered Productivity & Wellness Companion',
+    title: 'AEVA',
     description: 'NLP-powered modern web application designed to be a holistic companion for productivity and mental well-being.',
     image: '/images/chat.jpg',
   },
