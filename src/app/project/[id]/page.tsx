@@ -170,9 +170,8 @@ Technical Implementation:
 
 
     'ai-chatbot': {
-      // 1. Add a dedicated status key
-      status: 'In Development',
-      title: 'FocusAssist - The AI-Powered Productivity & Wellness Companion (In Development)',
+
+      title: 'AEVA',
       description: 'An AI-powered web app that merges a proactive productivity assistant with an empathetic wellness journal.',
       fullDescription: `A modern web application designed to be a holistic companion for productivity and mental well-being. It moves beyond a standard to-do list by integrating a sophisticated, context-aware AI that serves as both a proactive personal assistant and an empathetic journal.
   
@@ -183,19 +182,17 @@ Technical Implementation:
   • Real-Time Task Management: A Supabase backend with Realtime Subscriptions ensures the task list updates instantly for all users.
   • Interactive Focus Mode: A Pomodoro timer with integrated ambient sounds and a unique "Pattern Recall" brain-training game for mindful breaks.
   • Intelligent Learning Tools: Includes an AI-powered concept explainer, text summarizer, and a Flashcard Generator.
-  
-   Development Status & Roadmap
-  FocusAssist is currently under active development. Core features like AI task decomposition, the persistent journal, and real-time task management are functional.
+  • Mobile-First Responsive Design: Ensuring a seamless experience on all devices.
+
   
   Upcoming Features:
-  • Mobile-First Responsive Design: Ensuring a seamless experience on all devices.
   • Third-Party Integrations: Connecting with Google Calendar and other services.
   • Deeper Analytics: Providing users with insights into their productivity and wellness patterns.`,
       tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Gemini API', 'Supabase', 'Netlify Functions'],
       image: 'path/to/your/screenshot.png', // A screenshot of the current UI would be perfect
      // github: '#', // Your GitHub repo link
       // 3. For the demo link, it's best to link to a short video of the current state
-      demo: 'https://prismatic-pastelito-2fbd24.netlify.app/', // Link to a Loom or YouTube video showing the features in action
+      demo: 'https://aeva.space/', // Link to a Loom or YouTube video showing the features in action
       // 4. Reframe "results" as "Key Milestones" or "Project Goals"
       results: [
         'Successfully integrated Gemini API for complex, multi-step agentic tasks',
