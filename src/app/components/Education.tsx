@@ -13,7 +13,7 @@ export function Education() {
       gpa: '3.89 GPA',
       details: [
         'Relevant Coursework: Artificial Intelligence, Knowledge Representation, Linear Algebra in Engineering',
-        'Expected Graduation: May 2026',
+        'Expected Graduation: May 2026 ',
       ],
     },
     {
