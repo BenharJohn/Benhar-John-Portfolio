@@ -1,32 +1,29 @@
-'use client';
-
 import React from 'react';
-import {motion} from 'framer-motion';
-import {GraduationCap, Calendar} from 'lucide-react';
+import { motion } from 'framer-motion';
+import { GraduationCap, Calendar } from 'lucide-react';
 
 export function Education() {
   const education = [
     {
-      degree: 'M.S. in Robotics and Autonomous Systems (Artificial Intelligence)',
-      institution: 'Arizona State University, Tempe, AZ',
-      period: '2024 - 2026',
-      gpa: '3.89 GPA',
+      degree: "M.S. in Robotics and Autonomous Systems (Artificial Intelligence)",
+      institution: "Arizona State University, Tempe, AZ",
+      period: "2024 - 2026",
+      gpa: "3.89 GPA",
       details: [
-        'Relevant Coursework: Artificial Intelligence, Knowledge Representation, Linear Algebra in Engineering',
-        'Expected Graduation: May 2026 ',
-      ],
+        "Relevant Coursework: Artificial Intelligence, Knowledge Representation, Linear Algebra in Engineering",
+        "Expected Graduation: May 2026"
+      ]
     },
     {
       degree: "Bachelor's in Robotics, AI, and Machine Learning",
-      institution:
-        'Srinivas University Institute of Engineering and Technology, Karnataka, India',
-      period: '2020 - 2024',
-      gpa: '3.28 GPA',
+      institution: "Srinivas University Institute of Engineering and Technology, Karnataka, India",
+      period: "2020 - 2024",
+      gpa: "8.45/10 GPA",
       details: [
-        'Relevant Coursework: Artificial Intelligence, Machine Learning, Data Structures & Algorithms, Computer Vision',
-        'Graduated: May 2024',
-      ],
-    },
+        "Relevant Coursework: Artificial Intelligence, Machine Learning, Data Structures & Algorithms, Computer Vision",
+        "Graduated: May 2024"
+      ]
+    }
   ];
 
   return (
@@ -39,15 +36,15 @@ export function Education() {
         {education.map((edu, index) => (
           <motion.div
             key={index}
-            initial={{opacity: 0, y: 20}}
-            whileInView={{opacity: 1, y: 0}}
-            viewport={{once: true}}
-            transition={{duration: 0.5, delay: index * 0.1}}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             className="bg-zinc-900/50 rounded-xl p-8 hover:bg-zinc-900/70 transition-colors"
           >
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
               <h3 className="text-xl font-semibold">{edu.degree}</h3>
-              <div className="flex items-center gap-2 text-zinc-400">
+              <div className="flex items-center gap-2 text-zinc-400 md:ml-auto">
                 <Calendar className="w-4 h-4" />
                 {edu.period}
               </div>
@@ -56,17 +53,16 @@ export function Education() {
             <p className="text-zinc-400 mb-4">{edu.gpa}</p>
             <ul className="space-y-2">
               {edu.details.map((detail, i) => (
-                <li
-                  key={i}
-                  className="text-zinc-400 flex items-start gap-2"
-                >
+                <li key={i} className="text-zinc-400 flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-zinc-600 mt-2 flex-shrink-0" />
                   {detail}
                 </li>
-              ))}
+              ))
+              }
             </ul>
           </motion.div>
-        ))}
+        ))
+        }
       </div>
     </section>
   );
